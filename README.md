@@ -1,6 +1,6 @@
 # Industrial IoT Gateway & Live Monitoring System
 
-A complete IIoT pipeline simulating a real factory floor — from PLC sensor data collection 
+A complete IIoT pipeline simulating a real factory floor  from PLC sensor data collection 
 to live web dashboard monitoring — using Modbus TCP, MQTT, and OPC UA protocols.
 
 ---
