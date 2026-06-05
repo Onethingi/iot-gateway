@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var socket = io()
+        socket.on("sensor_update", function(data){
+            document.getElementById('temp').innerText = data.temperature
+            document.getElementById('pressure').innerText = data.pressure
+            document.getElementById('humidity').innerText = data.humidity
+            document.getElementById('status').innerText = 'Last Update' + data.timestamp
+
+            toggleDanger('card-temp' , 'temp', data.temperature, {{threshold.temperature}});
+            toggleDanger('card-pressure' , 'pressure', data.pressure, {{threshold.temperature}});
+            toggleDanger('card-humidity' , 'humidity', data.humidity, {{threshold.temperature}});
+            
+
+        })
+
+        function toggleDanger(cardID, valueID, value, threshold){
+            var card = document.getElementById(cardID);
+            var value = document.getElementById(valueID); 
+
+            if (value >= threshold){
+                card.classList.add('danger')
+                val.classList.add('danger')
+            }
+            else{
+                card.classList.remove('danger')
+                val.classList.remove('danger')
+            }
+        }
+    </script>
+</head>
+</html>
