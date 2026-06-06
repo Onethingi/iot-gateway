@@ -21,12 +21,12 @@ Python, Modbus TCP, FreeRTOS (CAN Bus), MQTT, OPC UA, Flask, SocketIO, pymodbus,
 
 
 ## Features
-- Dual protocol support — Modbus TCP and CAN Bus.
+- Dual protocol support  Modbus TCP and CAN Bus.
 - FreeRTOS-based CAN simulation running 3 concurrent ECU tasks on PC (no hardware needed).
 - Real-time MQTT publishing and OPC UA updates on every sensor read.
 - Live web dashboard with auto red alerts on threshold breach.
 - CSV data logging with timestamps.
-- Easily extendable — swap simulator for real PLC or CAN hardware.
+- Easily extendable swap simulator for real PLC or CAN hardware.
 
 ## How to Run
 
