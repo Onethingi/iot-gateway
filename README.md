@@ -1,7 +1,6 @@
 # Industrial IoT Gateway & Live Monitoring System
 
-A complete IIoT pipeline simulating a real factory floor  from PLC sensor data collection 
-to live web dashboard monitoring using Modbus TCP, MQTT, and OPC UA protocols.
+A complete IIoT pipeline simulating a real factory floor from PLC sensor data collection and CAN Bus ECU communication to live web dashboard monitoring, using Modbus TCP, CAN Bus, MQTT, and OPC UA protocols.
 
 ## Tech Stack
 Python, Modbus TCP, FreeRTOS (CAN Bus), MQTT, OPC UA, Flask, SocketIO, pymodbus, paho-mqtt, pandas, Mosquitto
@@ -29,6 +28,11 @@ Python, Modbus TCP, FreeRTOS (CAN Bus), MQTT, OPC UA, Flask, SocketIO, pymodbus,
 - Easily extendable swap simulator for real PLC or CAN hardware.
 
 ## How to Run
+
+### Install dependencies
+```bash
+pip install pymodbus paho-mqtt opcua flask flask-socketio pandas cryptography
+```
 
 ### Option 1 CAN Bus (FreeRTOS)
 ```bash
