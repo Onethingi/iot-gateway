@@ -30,24 +30,36 @@ Python, Modbus TCP, FreeRTOS (CAN Bus), MQTT, OPC UA, Flask, SocketIO, pymodbus,
 
 ## How to Run
 
-**Install dependencies:**
+### Option 1 — CAN Bus (FreeRTOS)
 ```bash
-pip install pymodbus paho-mqtt opcua flask flask-socketio pandas cryptography
+# Terminal 1 MQTT Broker
+mosquitto
+
+# Terminal 2  FreeRTOS CAN Simulator
+cd can_node && ./can_node
+
+# Terminal 3  CAN Reader
+python3 can_reader.py
+
+# Terminal 4 Dashboard
+python3 dashboard.py
 ```
 
-**Open 3 terminals and run in order:**
+### Option 2 — Modbus TCP
 ```bash
-# Terminal 1
-python simulator.py
+# Terminal 1 MQTT Broker
+mosquitto
 
-# Terminal 2
-python gateway.py
+# Terminal 2  PLC Simulator
+python3 simulator.py
 
-# Terminal 3
-python dashboard.py
+# Terminal 3 Gateway
+python3 gateway.py
+
+# Terminal 4  Dashboard
+python3 dashboard.py
 ```
-
-**Then open browser at:**
+Then open browser at:
 http://localhost:5000
 
 
