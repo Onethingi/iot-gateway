@@ -1,4 +1,4 @@
-#ifndef CAN_FRAME_H
+#define CAN_FRAME_H
 #define CAN_FRAME_H
 
 #include <stdint.h>
