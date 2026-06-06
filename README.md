@@ -30,7 +30,7 @@ Python, Modbus TCP, FreeRTOS (CAN Bus), MQTT, OPC UA, Flask, SocketIO, pymodbus,
 
 ## How to Run
 
-### Option 1 — CAN Bus (FreeRTOS)
+### Option 1 CAN Bus (FreeRTOS)
 ```bash
 # Terminal 1 MQTT Broker
 mosquitto
@@ -45,7 +45,7 @@ python3 can_reader.py
 python3 dashboard.py
 ```
 
-### Option 2 — Modbus TCP
+### Option 2  Modbus TCP
 ```bash
 # Terminal 1 MQTT Broker
 mosquitto
